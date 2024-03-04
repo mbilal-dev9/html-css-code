@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: Karla;
+  margin: 0;
 }
 
 main {
@@ -14,6 +15,7 @@ main {
   flex-direction: column;
   justify-content: center;
   margin: auto; /* why we need to use margin here, if i do not use margin then the border radius does not apply*/
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
 }
 
 .intro {
@@ -32,13 +34,14 @@ main {
 .second-heading {
   color: #c0df34;
   font-size: 18px;
-  margin-top: 24px;
+  margin: 24px 0px 0px;
 }
 
 .third-heading {
   color: #96a6bd;
   font-size: 15px;
-  margin-top: 10px;
+  margin: 10px 0px 0px;
+  line-height: 26px;
 }
 
 .sub-part {
@@ -98,6 +101,7 @@ main {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
 }
 
 .sign-up-button:hover {
