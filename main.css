@@ -1,0 +1,129 @@
+body {
+  background-color: hsl(204, 43%, 93%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Karla;
+}
+
+main {
+  max-width: 636px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto; /* why we need to use margin here, if i do not use margin then the border radius does not apply*/
+}
+
+.intro {
+  justify-content: center;
+  background-color: white;
+  padding: 0 40px;
+  height: 216px;
+}
+
+.main-text {
+  margin-top: 38px;
+  font-size: 24px;
+  color: #2ab2af;
+}
+
+.second-heading {
+  color: #c0df34;
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.third-heading {
+  color: #96a6bd;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.sub-part {
+  display: flex;
+  flex-direction: row;
+  height: 258px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  background-color: #2ab2af;
+  width: 50%;
+  padding: 40px;
+}
+
+.description-title {
+  font-size: 18px;
+  color: #e5eff5;
+  margin: 0;
+}
+
+.price-main {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 0px 0px;
+  gap: 20px;
+}
+
+.price {
+  font-size: 30px;
+  color: #e5eff5;
+  margin: 0;
+}
+
+.per {
+  font-size: 16px;
+  margin: 8px 0px 0px;
+  color: #e5eff5;
+}
+
+.full-access {
+  margin: 8px 0px 0px;
+  font-size: 16px;
+  color: #e5eff5;
+}
+
+.sign-up-button {
+  width: 100%;
+  padding: 17px;
+  margin: 30px 0px 0px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #c0df34;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sign-up-button:hover {
+  background-color: #2fc6c4;
+}
+
+.about {
+  width: 50%;
+  background-color: #2fc6c4;
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-us {
+  font-size: 18px;
+  color: #e5eff5;
+  margin: 0;
+}
+
+.list-style {
+  list-style: none;
+  margin: 17px 0px 0px;
+  padding: 0;
+  color: #e5eff5;
+  font-size: 14px;
+  line-height: 20px;
+}
