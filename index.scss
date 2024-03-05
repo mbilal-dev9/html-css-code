@@ -6,6 +6,19 @@ $light-grey-color: #96a6bd;
 $light-blue-color: #2fc6c4;
 $extra-light-blue-color: #e5eff5;
 
+
+@mixin display($display: flex) {
+  display: $display;
+}
+
+@mixin flex-direction($direction: column) {
+  flex-direction: $direction
+}
+
+@mixin color($color: $while-color) {
+  color: $color;
+}
+
 body {
   background-color: $bg-color;
   height: 100vh;
@@ -14,14 +27,14 @@ body {
 }
 
 .main-container {
-  display: flex;
+  @include display;
   justify-content: center;
   min-height: 100vh;
 }
 
 .main-div-align-container {
-  display: flex;
-  flex-direction: column;
+  @include display;
+  @include flex-direction;
   justify-content: center;
 }
 
@@ -29,8 +42,8 @@ body {
   max-width: 636px;
   border-radius: 16px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  @include display;
+  @include flex-direction;
   justify-content: center;
   box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
 }
@@ -44,17 +57,17 @@ body {
   h1 {
     margin-top: 38px;
     font-size: 24px;
-    color: $blue-color;
+    @include color($color: $blue-color);
   }
 
   h2 {
-    color: $yellow-color;
+    @include color($color: $yellow-color);
     font-size: 18px;
     margin: 24px 0px 0px;
   }
 
   p {
-    color: $light-grey-color;
+    @include color($color: $light-grey-color);
     font-size: 15px;
     margin: 10px 0px 0px;
     line-height: 26px;
@@ -62,40 +75,21 @@ body {
 }
 
 .sub-part {
-  display: flex;
-  flex-direction: row;
+  @include display;
+  @include flex-direction($direction: row);
 }
 
 .description-section {
-  display: flex;
-  flex-direction: column;
+  @include display;
+  @include flex-direction;
   background-color: $blue-color;
   flex: 1;
   padding: 40px;
 
   h1 {
     font-size: 18px;
-    color: $extra-light-blue-color;
+    @include color($color: $extra-light-blue-color);
     margin: 0;
-  }
-
-  div {
-    display: flex;
-    flex-direction: row;
-    margin: 16px 0px 0px;
-    gap: 20px;
-
-    h2 {
-      font-size: 30px;
-      color: $extra-light-blue-color;
-      margin: 0;
-    }
-
-    p {
-      font-size: 16px;
-      margin: 8px 0px 0px;
-      color: $extra-light-blue-color;
-    }
   }
 
   p {
@@ -104,13 +98,32 @@ body {
     color: $extra-light-blue-color;
   }
 
+  .price-section {
+    @include display;
+    @include flex-direction($direction: row);
+    margin: 16px 0px 0px;
+    gap: 20px;
+
+    h2 {
+      font-size: 30px;
+      @include color($color: $extra-light-blue-color);
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 8px 0px 0px;
+      @include color($color: $extra-light-blue-color);
+    }
+  }
+
   button {
     width: 100%;
     padding: 17px;
     margin: 30px 0px 0px;
     font-size: 14px;
     font-family: Arial;
-    color: $while-color;
+    @include color($color: $while-color);
     background-color: $yellow-color;
     border: none;
     border-radius: 8px;
@@ -129,11 +142,12 @@ body {
   background-color: $light-blue-color;
   padding: 40px;
   display: flex;
-  flex-direction: column;
+  @include flex-direction;
 
   h2 {
     font-size: 18px;
     color: $extra-light-blue-color;
+    @include color($color: $extra-light-blue-color);
     margin: 0;
   }
 
@@ -141,7 +155,7 @@ body {
     list-style: none;
     margin: 17px 0px 0px;
     padding: 0;
-    color: $extra-light-blue-color;
+    @include color($color: $extra-light-blue-color);
     font-size: 14px;
     line-height: 20px;
   }
@@ -168,7 +182,8 @@ body {
 
   h1 {
     margin: 0;
-    color: $yellow-color;
+    @include color($color: $yellow-color);
+
   }
 
   div {

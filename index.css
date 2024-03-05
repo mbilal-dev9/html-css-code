@@ -67,25 +67,25 @@ body {
   color: #e5eff5;
   margin: 0;
 }
-.description-section div {
+.description-section p {
+  margin: 8px 0px 0px;
+  font-size: 16px;
+  color: #e5eff5;
+}
+.description-section .price-section {
   display: flex;
   flex-direction: row;
   margin: 16px 0px 0px;
   gap: 20px;
 }
-.description-section div h2 {
+.description-section .price-section h2 {
   font-size: 30px;
   color: #e5eff5;
   margin: 0;
 }
-.description-section div p {
+.description-section .price-section p {
   font-size: 16px;
   margin: 8px 0px 0px;
-  color: #e5eff5;
-}
-.description-section p {
-  margin: 8px 0px 0px;
-  font-size: 16px;
   color: #e5eff5;
 }
 .description-section button {
@@ -115,6 +115,7 @@ body {
 }
 .about-section h2 {
   font-size: 18px;
+  color: #e5eff5;
   color: #e5eff5;
   margin: 0;
 }
