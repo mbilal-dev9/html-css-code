@@ -183,6 +183,7 @@ li::after {
   background-color: transparent;
   font-size: large;
   width: 75%;
+  padding-left: 8px;
 }
 
 .search-image {
