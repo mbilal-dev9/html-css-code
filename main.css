@@ -190,4 +190,5 @@ li::after {
   width: 40px;
   left: 178px;
   top: 2px;
+  cursor: pointer;
 }
