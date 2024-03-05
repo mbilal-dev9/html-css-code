@@ -24,29 +24,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-.intro {
+.intro-section {
   justify-content: center;
   background-color: white;
   padding: 0 40px;
   height: 216px;
 }
-
-.main-text {
+.intro-section h1 {
   margin-top: 38px;
   font-size: 24px;
   color: #2ab2af;
 }
-
-.second-heading {
+.intro-section h2 {
   color: #c0df34;
   font-size: 18px;
   margin: 24px 0px 0px;
 }
-
-.third-heading {
+.intro-section p {
   color: #96a6bd;
   font-size: 15px;
   margin: 10px 0px 0px;
@@ -65,72 +62,63 @@ body {
   flex: 1;
   padding: 40px;
 }
-
-.description-title {
+.description-section h1 {
   font-size: 18px;
   color: #e5eff5;
   margin: 0;
 }
-
-.price-main {
+.description-section div {
   display: flex;
   flex-direction: row;
   margin: 16px 0px 0px;
   gap: 20px;
 }
-
-.price {
+.description-section div h2 {
   font-size: 30px;
   color: #e5eff5;
   margin: 0;
 }
-
-.per {
+.description-section div p {
   font-size: 16px;
   margin: 8px 0px 0px;
   color: #e5eff5;
 }
-
-.full-access {
+.description-section p {
   margin: 8px 0px 0px;
   font-size: 16px;
   color: #e5eff5;
 }
-
-.sign-up-button {
+.description-section button {
   width: 100%;
   padding: 17px;
   margin: 30px 0px 0px;
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
   color: white;
   background-color: #c0df34;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
-  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-
-.sign-up-button:hover {
+.description-section button:hover {
   background-color: #2fc6c4;
 }
 
-.about {
+.about-section {
   flex: 1;
   background-color: #2fc6c4;
   padding: 40px;
   display: flex;
   flex-direction: column;
 }
-
-.why-us {
+.about-section h2 {
   font-size: 18px;
   color: #e5eff5;
   margin: 0;
 }
-
-.list-style {
+.about-section ul {
   list-style: none;
   margin: 17px 0px 0px;
   padding: 0;
@@ -138,35 +126,28 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
-
-li {
+.about-section li {
   position: relative;
 }
-
-li::before {
+.about-section li:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background-image: url(./assets/javascript.svg);
   border-radius: 50%;
   left: -2rem;
+  top: 2px;
 }
 
-li::after {
-  content: ',';
-}
-
-.login {
+.login-section {
   padding: 40px;
 }
-
-.login-text {
+.login-section h1 {
   margin: 0;
   color: #c0df34;
 }
-
-.input-main-div {
+.login-section div {
   position: relative;
   margin: 8px 0px 0px;
   padding: 10px 0px 10px 0px;
@@ -176,8 +157,7 @@ li::after {
   font-size: 16px;
   background-color: #c0df34;
 }
-
-.input-field {
+.login-section div input {
   border: none;
   outline: none;
   background-color: transparent;
@@ -185,11 +165,10 @@ li::after {
   width: 75%;
   padding-left: 8px;
 }
-
-.search-image {
+.login-section div img {
   position: absolute;
   height: 40px;
   width: 40px;
   top: 2px;
   cursor: pointer;
-}
+}/*# sourceMappingURL=index.css.map */
