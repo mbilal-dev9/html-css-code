@@ -182,6 +182,7 @@ li::after {
   outline: none;
   background-color: transparent;
   font-size: large;
+  width: 75%;
 }
 
 .search-image {
