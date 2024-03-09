@@ -214,3 +214,39 @@ body {
     }
   }
 }
+
+
+@media screen and (max-width: 600px) {
+
+  .main-div-align-container {
+    margin: 40px 0px 40px;
+
+  }
+  .main-div { 
+    max-width: 310px !important;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .intro-section {
+    height: auto;
+    p {
+      margin: 10px 0px 30px;
+      height: auto;
+
+    }
+
+  }
+
+  .sub-part {
+    @include flex-direction($direction: column);
+  }
+
+  .login-section {
+    div {
+      width: 98%;
+  
+    }
+  }
+
+}

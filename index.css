@@ -172,4 +172,28 @@ body {
   width: 40px;
   top: 2px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .main-div-align-container {
+    margin: 40px 0px 40px;
+  }
+  .main-div {
+    max-width: 310px !important;
+    height: auto;
+    border-radius: 8px;
+  }
+  .intro-section {
+    height: auto;
+  }
+  .intro-section p {
+    margin: 10px 0px 30px;
+    height: auto;
+  }
+  .sub-part {
+    flex-direction: column;
+  }
+  .login-section div {
+    width: 98%;
+  }
 }/*# sourceMappingURL=index.css.map */
