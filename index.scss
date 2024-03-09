@@ -1,0 +1,216 @@
+$bg-color: hsl(204, 43%, 93%);
+$while-color: white;
+$blue-color: #2ab2af;
+$yellow-color: #c0df34;
+$light-grey-color: #96a6bd;
+$light-blue-color: #2fc6c4;
+$extra-light-blue-color: #e5eff5;
+
+
+@mixin display($display: flex) {
+  display: $display;
+}
+
+@mixin flex-direction($direction: column) {
+  flex-direction: $direction
+}
+
+@mixin color($color: $while-color) {
+  color: $color;
+}
+
+body {
+  background-color: $bg-color;
+  height: 100vh;
+  font-family: Karla;
+  margin: 0;
+}
+
+.main-container {
+  @include display;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-div-align-container {
+  @include display;
+  @include flex-direction;
+  justify-content: center;
+}
+
+.main-div {
+  max-width: 636px;
+  border-radius: 16px;
+  overflow: hidden;
+  @include display;
+  @include flex-direction;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
+}
+
+.intro-section {
+  justify-content: center;
+  background-color: $while-color;
+  padding: 0 40px;
+  height: 216px;
+
+  h1 {
+    margin-top: 38px;
+    font-size: 24px;
+    @include color($color: $blue-color);
+  }
+
+  h2 {
+    @include color($color: $yellow-color);
+    font-size: 18px;
+    margin: 24px 0px 0px;
+  }
+
+  p {
+    @include color($color: $light-grey-color);
+    font-size: 15px;
+    margin: 10px 0px 0px;
+    line-height: 26px;
+  }
+}
+
+.sub-part {
+  @include display;
+  @include flex-direction($direction: row);
+}
+
+.description-section {
+  @include display;
+  @include flex-direction;
+  background-color: $blue-color;
+  flex: 1;
+  padding: 40px;
+
+  h1 {
+    font-size: 18px;
+    @include color($color: $extra-light-blue-color);
+    margin: 0;
+  }
+
+  p {
+    margin: 8px 0px 0px;
+    font-size: 16px;
+    color: $extra-light-blue-color;
+  }
+
+  .price-section {
+    @include display;
+    @include flex-direction($direction: row);
+    margin: 16px 0px 0px;
+    gap: 20px;
+
+    h2 {
+      font-size: 30px;
+      @include color($color: $extra-light-blue-color);
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 8px 0px 0px;
+      @include color($color: $extra-light-blue-color);
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 17px;
+    margin: 30px 0px 0px;
+    font-size: 14px;
+    font-family: Arial;
+    @include color($color: $while-color);
+    background-color: $yellow-color;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+
+    &:hover {
+      background-color: $light-blue-color;
+    }
+  }
+}
+
+.about-section {
+  flex: 1;
+  background-color: $light-blue-color;
+  padding: 40px;
+  display: flex;
+  @include flex-direction;
+
+  h2 {
+    font-size: 18px;
+    color: $extra-light-blue-color;
+    @include color($color: $extra-light-blue-color);
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 17px 0px 0px;
+    padding: 0;
+    @include color($color: $extra-light-blue-color);
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  li {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-image: url(./assets/javascript.svg);
+      border-radius: 50%;
+      left: -2rem;
+      top: 2px;
+    }
+  }
+
+}
+
+.login-section {
+  padding: 40px;
+
+  h1 {
+    margin: 0;
+    @include color($color: $yellow-color);
+
+  }
+
+  div {
+    position: relative;
+    margin: 8px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    width: 40%;
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: $yellow-color;
+
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      font-size: large;
+      width: 75%;
+      padding-left: 8px;
+    }
+
+    img {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      top: 2px;
+      cursor: pointer;
+    }
+  }
+}
